@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Géraud-René DJONTU | Portfolio Data Science & IA</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">G.DJONTU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Accueil -->
+  <section id="accueil" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7 order-lg-1 order-2">
+          <span class="badge bg-primary mb-3">Data Scientist & IA</span>
+          <h1 class="display-4 fw-bold mb-3">Géraud-René DJONTU</h1>
+          <p class="lead text-secondary mb-4">Étudiant à Polytech Douala, passionné par l'intelligence artificielle, le deep learning et le développement web.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#contact" class="btn btn-primary btn-lg">Me contacter</a>
+            <a href="#cv" class="btn btn-outline-secondary btn-lg">Voir mon CV</a>
+          </div>
+          <div class="social-links mt-4">
+            <a href="https://github.com/irene-computer" target="_blank" class="me-3"><i class="fab fa-github fa-xl"></i></a>
+            <a href="mailto:djonturene18@gmail.com" class="me-3"><i class="fas fa-envelope fa-xl"></i></a>
+            <a href="tel:+237673034763"><i class="fas fa-phone fa-xl"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0 text-center">
+          <img src="images/avatar.jpg" alt="Géraud-René DJONTU" class="hero-img" onerror="this.src='https://via.placeholder.com/400x400?text=Photo+Profil'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-2">Réalisations</span>
+        <h2 class="display-6 fw-bold">Projets Data Science & IA</h2>
+        <p class="text-secondary">Des projets concrets allant de l'analyse à l'application web</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Projet 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <img src="images/soddy.jpeg" class="card-img-top" alt="Loi de Soddy" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h5 class="card-title">Loi de Soddy</h5>
+              <p class="tech-badge">R / Analyse géométrique</p>
+              <p class="card-text">Implémentation de la loi de Descartes-Soddy pour les cercles tangents.</p>
+              <a href="https://github.com/irene-computer/soddyR" target="_blank" class="btn btn-sm btn-outline-primary">Code source <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <img src="images/ia.png" class="card-img-top" alt="IA Éducation" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h5 class="card-title">IA & Amélioration scolaire</h5>
+              <p class="tech-badge">Machine Learning / Scikit-learn</p>
+              <p class="card-text">Modèle prédictif pour identifier les élèves en difficulté. +15% de résultats.</p>
+              <a href="https://github.com/irene-computer/projet_ia" target="_blank" class="btn btn-sm btn-outline-primary">Code source <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <img src="images/cnn.png" class="card-img-top" alt="CNN CIFAR-10" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h5 class="card-title">CNN - CIFAR-10</h5>
+              <p class="tech-badge">TensorFlow / Keras</p>
+              <p class="card-text">Réseau convolutif pour classification d'images. Précision de 89%.</p>
+              <a href="https://github.com/irene-computer/cnn_web_app" target="_blank" class="btn btn-sm btn-outline-primary">Code source <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card project-card h-100">
+            <img src="images/E-commerce.jpeg" class="card-img-top" alt="E-commerce" onerror="this.style.display='none'">
+            <div class="card-body">
+              <h5 class="card-title">Application E-commerce</h5>
+              <p class="tech-badge">Django / SQL</p>
+              <p class="card-text">Application complète : catalogue, panier, authentification.</p>
+              <a href="https://github.com/irene-computer/django-ecommerce" target="_blank" class="btn btn-sm btn-outline-primary">Code source <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Stages -->
+  <section id="experiences" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-2">Parcours professionnel</span>
+        <h2 class="display-6 fw-bold">Stages & Expériences</h2>
+        <p class="text-secondary">Des expériences terrain variées</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="exp-card text-center">
+            <div class="exp-icon"><i class="fas fa-network-wired fa-3x text-primary"></i></div>
+            <h4>STI Cameroun</h4>
+            <span class="badge bg-secondary mb-2">Stage - Réseau informatique</span>
+            <p>Apprentissage des fondamentaux des réseaux : configuration, câblage, maintenance.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="exp-card text-center">
+            <div class="exp-icon"><i class="fas fa-laptop-code fa-3x text-primary"></i></div>
+            <h4>Glory Computer</h4>
+            <span class="badge bg-secondary mb-2">Stage - Bureautique</span>
+            <p>Maîtrise des outils bureautiques et assistance technique aux utilisateurs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="exp-card text-center">
+            <div class="exp-icon"><i class="fas fa-chart-line fa-3x text-primary"></i></div>
+            <h4>K-Tech</h4>
+            <span class="badge bg-secondary mb-2">Commerce d'ordinateurs</span>
+            <p>Vente et conseil en matériel informatique, gestion de stock, relation client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-2">Savoir-faire</span>
+        <h2 class="display-6 fw-bold">Compétences techniques</h2>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="skill-category">
+            <h4><i class="fas fa-brain me-2 text-primary"></i>Data Science & IA</h4>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Deep Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="skill-category">
+            <h4><i class="fas fa-code me-2 text-primary"></i>Développement & Outils</h4>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Bootstrap 5</span>
+              <span class="skill-tag">Réseaux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CV intégré (Solution au problème de téléchargement) -->
+  <section id="cv" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge bg-primary mb-2">Curriculum Vitae</span>
+        <h2 class="display-6 fw-bold">Mon parcours en détail</h2>
+        <p class="text-secondary">Cliquez sur le bouton ci-dessous pour visualiser ou télécharger mon CV</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="cv-container">
+            <!-- Aperçu du CV intégré (texte formaté) -->
+            <div class="cv-preview">
+              <div class="cv-header text-center">
+                <h3>DJONTU MOAFO GERAUD-RENE</h3>
+                <p>Data Scientist & Développeur IA</p>
+                <hr>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="cv-section">
+                    <h5><i class="fas fa-user text-primary me-2"></i>Contact</h5>
+                    <p><i class="fas fa-envelope fa-sm me-2"></i> djonturene18@gmail.com</p>
+                    <p><i class="fas fa-phone fa-sm me-2"></i> 673 034 763</p>
+                    <p><i class="fab fa-github fa-sm me-2"></i> github.com/irene-computer</p>
+                  </div>
+                  
+                  <div class="cv-section">
+                    <h5><i class="fas fa-graduation-cap text-primary me-2"></i>Formation</h5>
+                    <p><strong>Polytechnicien de Douala</strong><br>Data Science & IA (en cours)</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-8">
+                  <div class="cv-section">
+                    <h5><i class="fas fa-briefcase text-primary me-2"></i>Expériences</h5>
+                    <p><strong>STI Cameroun</strong> - Stage réseau informatique</p>
+                    <p><strong>Glory Computer</strong> - Stage bureautique</p>
+                    <p><strong>K-Tech</strong> - Commerce informatique</p>
+                  </div>
+                  
+                  <div class="cv-section">
+                    <h5><i class="fas fa-project-diagram text-primary me-2"></i>Projets</h5>
+                    <p><strong>Loi de Soddy (R)</strong> - Analyse géométrique</p>
+                    <p><strong>IA Éducation</strong> - Modèle prédictif +15%</p>
+                    <p><strong>CNN CIFAR-10</strong> - Deep Learning 89%</p>
+                    <p><strong>E-commerce Django</strong> - Application complète</p>
+                  </div>
+                  
+                  <div class="cv-section">
+                    <h5><i class="fas fa-cogs text-primary me-2"></i>Compétences</h5>
+                    <p>Python, R, SQL, TensorFlow, Scikit-learn, Django, Git</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Boutons d'action -->
+            <div class="cv-actions text-center mt-4">
+              <button onclick="window.print()" class="btn btn-outline-primary btn-lg me-3">
+                <i class="fas fa-print me-2"></i>Imprimer / PDF
+              </button>
+              <button onclick="downloadCV()" class="btn btn-primary btn-lg">
+                <i class="fas fa-download me-2"></i>Télécharger CV (HTML)
+              </button>
+            </div>
+            <p class="text-center text-secondary mt-3 small">
+              <i class="fas fa-info-circle me-1"></i> Cliquez sur "Imprimer / PDF" puis choisissez "Enregistrer au format PDF"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-card text-center">
+            <h2 class="fw-bold mb-4">Discutons de votre projet</h2>
+            <p class="mb-4">Je suis ouvert aux opportunités de stage, alternance ou missions freelance.</p>
+            <div class="row justify-content-center mb-4">
+              <div class="col-sm-6 mb-3">
+                <div class="contact-info">
+                  <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                  <h6>Email</h6>
+                  <a href="mailto:djonturene18@gmail.com">djonturene18@gmail.com</a>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="contact-info">
+                  <i class="fas fa-phone fa-2x text-primary mb-2"></i>
+                  <h6>Téléphone</h6>
+                  <a href="tel:+237673034763">673 034 763</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 DJONTU MOAFO GERAUD-RENE - Portfolio Data Science & IA</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Script pour le téléchargement du CV -->
+  <script>
+    function downloadCV() {
+      // Récupère le contenu du CV
+      const cvContent = document.querySelector('.cv-preview').cloneNode(true);
+      const style = document.querySelector('style').innerHTML;
+      const bootstrapLink = '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">';
+      const fontAwesome = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">';
+      
+      // Crée un document HTML complet pour le CV
+      const doc = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <meta charset="UTF-8">
+          <title>CV_Geraud_DJONTU</title>
+          ${bootstrapLink}
+          ${fontAwesome}
+          <style>
+            body {
+              font-family: 'Segoe UI', Arial, sans-serif;
+              padding: 2rem;
+              background: white;
+            }
+            .cv-preview {
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 2rem;
+              border: 1px solid #ddd;
+              border-radius: 16px;
+            }
+            .cv-header h3 { color: #0d6efd; }
+            hr { margin: 1rem 0; }
+            .cv-section { margin-bottom: 1.5rem; }
+            .cv-section h5 { color: #0d6efd; margin-bottom: 0.75rem; }
+            @media print {
+              body { padding: 0; }
+              .cv-preview { border: none; }
+              .btn { display: none; }
+            }
+          </style>
+          <style>${style}</style>
+        </head>
+        <body>
+          ${cvContent.outerHTML}
+          <div style="text-align: center; margin-top: 2rem; font-size: 12px; color: gray;">
+            CV généré depuis le portfolio de Géraud-René DJONTU
+          </div>
+        </body>
+        </html>
+      `;
+      
+      // Crée un blob et télécharge
+      const blob = new Blob([doc], { type: 'text/html' });
+      const link = document.createElement('a');
+      const url = URL.createObjectURL(blob);
+      link.href = url;
+      link.download = 'CV_Geraud_DJONTU.html';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
